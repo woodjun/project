@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <title>主进程和渲染进程通信</title>
+  </head>
+  <body>
+    <h1>主进程和渲染进程通信</h1>
+    <button>渲到主异步操作</button>
+    <br>
+    <br>
+    <button>渲到主同步操作</button>
+    <br>
+    <br>
+    <button>打开新窗口，从本地获取数据</button>
+    <br>
+    <br>
+    <h1>来自subwindow.html发送数据</h1>
+    <input type="text" id="send">
+    <script src="index.js"></script>
+  </body>
+</html>
