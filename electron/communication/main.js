@@ -85,6 +85,3 @@ ipcMain.on('render-send', (e, data) => {
   const mainWin = BrowserWindow.fromId(mainWinId)
   mainWin.webContents.send('main-send', data)
 })
-
-
-
