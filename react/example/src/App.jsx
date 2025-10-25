@@ -3,6 +3,7 @@ import Weather from "./State";
 import Person from "./Props";
 import Person2 from "./Props/func";
 import Demo from "./Refs";
+import Controll from './Controll'
 
 export default class App extends Component {
   state = {
@@ -27,6 +28,9 @@ export default class App extends Component {
         <hr />
         <h1>Refs</h1>
         <Demo></Demo>
+        <hr />
+        <h1>受控组件和非受控组件</h1>
+        <Controll></Controll>
       </div>
     )
   }
