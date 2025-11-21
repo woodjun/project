@@ -17,11 +17,18 @@ export default class Weather extends Component {
         console.log(this.state) // undefined
         // 必须调用setState方法才能更新状态
         // setState方法采用的是合并策略
-        this.setState({isHot: !this.state.isHot})
+        // render调用后才会调用callback函数
+        this.setState({isHot: !this.state.isHot}, () => {
+            console.log('数据更新完毕1')
+        })
     }
     // 使用箭头函数内部this指向实例对象，不用重新绑定this
     changeStudy = () => {
-        this.setState({isStudy : !this.state.isStudy})
+        // this.setState({isStudy : !this.state.isStudy})
+        // 函数式setState中的updater接收state和props参数
+        this.setState((state) => ({isStudy: !state.isStudy}), () => {
+            console.log('数据更新完毕2')
+        })
     }
 
     render() {
