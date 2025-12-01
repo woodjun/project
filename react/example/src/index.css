@@ -1,0 +1,81 @@
+.app {
+
+}
+
+.app-container {
+  display: flex;
+  text-align: center;
+}
+
+.tender, .price, .log {
+  flex: 1;
+  text-align: center;
+  padding: 0 80px;
+}
+
+.tender-table{
+  border: 1px solid #000;
+  font-size: 24px;
+}
+
+.tender-body {
+  height: 400px;
+  overflow-y: auto;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.tender-body::-webkit-scrollbar {
+  display: none;
+}
+
+.tender-row {
+  display: flex;
+  border-bottom: 1px solid #000;
+}
+
+.tender-row:last-child{
+  border-bottom: 0px;
+}
+
+.tender-col {
+  flex: 1;
+  padding: 10px 0;
+  border-right: 1px solid #000;
+}
+
+.tender-col:last-child{
+  border-right: 0px;
+}
+
+.type{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.price-col {
+  display: flex;
+  justify-content: center;
+}
+
+.operate {
+ display: flex;
+ justify-content: space-evenly;
+ flex-wrap: wrap;
+}
+
+.type-btn {
+  height: 40px;
+  width: 40px;
+}
+
+.btn {
+  width: 18%;
+  margin-bottom: 4px;
+}
+
+.active {
+  color: white;
+  background-color: #409eff;
+}
